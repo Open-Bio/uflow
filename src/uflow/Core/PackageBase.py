@@ -50,7 +50,7 @@ class PackageBase(object):
             for filename in os.listdir(directory):
                 if filename.endswith(".py") and not filename.startswith("__"):
                     # The module path is derived from the package's own __module__ attribute.
-                    # This works for both built-in packages (e.g., 'uflow.Packages.uflowBase')
+                    # This works for both built-in packages (e.g., 'FlowBasePackage')
                     # and external entry-point packages (e.g., 'demopack'), making the discovery
                     # mechanism universal and robust.
                     base_module_path = self.__class__.__module__

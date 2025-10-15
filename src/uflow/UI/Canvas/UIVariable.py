@@ -261,7 +261,7 @@ class UIVariable(QWidget, IPropertiesViewSupport):
         refs = [n.getWrapper() for n in self._rawVariable.findRefs()]
         app = self.variablesWidget.uflowInstance
         if "Search results" not in [t.name() for t in app.getRegisteredTools()]:
-            app.invokeDockToolByName("uflowBase", "Search results")
+            app.invokeDockToolByName("FlowBasePackage", "Search results")
         self.variablesWidget.uflowInstance.getCanvas().requestShowSearchResults.emit(
             refs
         )

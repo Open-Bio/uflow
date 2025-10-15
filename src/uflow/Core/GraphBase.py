@@ -400,22 +400,22 @@ class GraphBase(ISerializable):
         return result
 
     def getInputNode(self):
-        """Creates and adds to graph :class:`~uflow.Packages.uflowBase.Nodes.graphNodes.graphInputs` node
+        """Creates and adds to graph :class:`~FlowBasePackage.Nodes.graphNodes.graphInputs` node
 
         pins on this node will be exposed on compound node as input pins
         :rtype: :class:`~uflow.Core.NodeBase.NodeBase`
         """
-        node = getRawNodeInstance("graphInputs", "uflowBase")
+        node = getRawNodeInstance("graphInputs", "FlowBasePackage")
         self.addNode(node)
         return node
 
     def getOutputNode(self):
-        """Creates and adds to graph :class:`~uflow.Packages.uflowBase.Nodes.graphNodes.graphOutputs` node.
+        """Creates and adds to graph :class:`~FlowBasePackage.Nodes.graphNodes.graphOutputs` node.
 
         pins on this node will be exposed on compound node as output pins
         :rtype: :class:`~uflow.Core.NodeBase.NodeBase`
         """
-        node = getRawNodeInstance("graphOutputs", "uflowBase")
+        node = getRawNodeInstance("graphOutputs", "FlowBasePackage")
         self.addNode(node)
         return node
 

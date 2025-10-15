@@ -12,7 +12,7 @@ Detailed description
 ====================
 
 We use this function as decorator in 100% cases.
-See :file:`uflow/Packages/uflowBase/FunctionLibraries` content for plenty of examples
+See :file:`uflow/Packages/FlowBasePackage/FunctionLibraries` content for plenty of examples
 
 Arguments
 ---------

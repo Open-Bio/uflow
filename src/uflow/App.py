@@ -29,7 +29,7 @@ from uflow.UI.ContextMenuGenerator import ContextMenuGenerator
 from uflow.UI.Widgets.PreferencesWindow import PreferencesWindow
 
 try:
-    from uflow.Packages.uflowBase.Tools.PropertiesTool import PropertiesTool
+    from FlowBasePackage.Tools.PropertiesTool import PropertiesTool
 except ImportError:
     pass
 import asyncio

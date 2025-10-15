@@ -2285,7 +2285,7 @@ class PackageBuilder(QMdiSubWindow):
                     self.ui.chkAllowMultipleConnections.setChecked(True)
                 if (
                     "ChangeTypeOnConnection" in option
-                ):  #: Used by :class:`~uflow.Packages.uflowBase.Pins.AnyPin.AnyPin` to determine if it can change its data type on new connection.
+                ):  #: Used by :class:`~FlowBasePackage.Pins.AnyPin.AnyPin` to determine if it can change its data type on new connection.
                     self.ui.chkChangeTypeOnConnection.setChecked(True)
                 if "RenamingEnabled" in option:  #: Determines if pin can be renamed
                     self.ui.chkRenamingEnabled.setChecked(True)
@@ -2303,11 +2303,11 @@ class PackageBuilder(QMdiSubWindow):
                     self.ui.chkStorable.setChecked(True)
                 if (
                     "AllowAny" in option
-                ):  #: Special flag that allow a pin to be :class:`~uflow.Packages.uflowBase.Pins.AnyPin.AnyPin`, which means non typed without been marked as error. By default a :py:class:`uflow.Packages.uflowBase.Pins.AnyPin.AnyPin` need to be initialized with some data type, other defined pin. This flag overrides that. Used in lists and non typed nodes
+                ):  #: Special flag that allow a pin to be :class:`~FlowBasePackage.Pins.AnyPin.AnyPin`, which means non typed without been marked as error. By default a :py:class:`FlowBasePackage.Pins.AnyPin.AnyPin` need to be initialized with some data type, other defined pin. This flag overrides that. Used in lists and non typed nodes
                     self.ui.chkAllowAny.setChecked(True)
                 if (
                     "DictElementSupported" in option
-                ):  #: Dicts are constructed with :class:`DictElement` objects. So dict pins will only allow other dicts until this flag enabled. Used in :class:`~uflow.Packages.uflowBase.Nodes.makeDict` node
+                ):  #: Dicts are constructed with :class:`DictElement` objects. So dict pins will only allow other dicts until this flag enabled. Used in :class:`~FlowBasePackage.Nodes.makeDict` node
                     self.ui.chkDictionaryElementSupported.setChecked(True)
 
         if "DISABLED_OPTIONS" in data:
@@ -3036,7 +3036,7 @@ class PackageBuilder(QMdiSubWindow):
         for file in os.listdir(filepath):
             if file[1] != "_":
                 file2 = file.replace(".py", "")
-                # from uflow.Packages.uflowBase.Pins.AnyPin import AnyPin
+                # from FlowBasePackage.Pins.AnyPin import AnyPin
                 f.write(
                     "from uflow.Packages.%s.%s.%s import %s\n"
                     % (selectedpackage, foldername, file2, file2)
@@ -3075,7 +3075,7 @@ class PackageBuilder(QMdiSubWindow):
                                 % (selectedpackage, foldername, file2, functionname)
                             )
                         break
-                # from uflow.Packages.uflowBase.Pins.AnyPin import AnyPin
+                # from FlowBasePackage.Pins.AnyPin import AnyPin
 
         f.write("\n")
 

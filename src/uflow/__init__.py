@@ -123,7 +123,7 @@ def getRawNodeInstance(nodeClassName, packageName=None, libName=None, **kwargs):
             for pyNodeFileName in files:
                 pyNodeName, _ = os.path.splitext(pyNodeFileName)
                 if nodeClassName == pyNodeName:
-                    pythonNode = getRawNodeInstance("pythonNode", "uflowBase")
+                    pythonNode = getRawNodeInstance("pythonNode", "FlowBasePackage")
                     pyNodeFullPath = os.path.join(path, pyNodeFileName)
                     with open(pyNodeFullPath, "r") as f:
                         pythonNode._nodeData = f.read()
@@ -139,7 +139,7 @@ def getRawNodeInstance(nodeClassName, packageName=None, libName=None, **kwargs):
                 with open(compoundNodeFullPath, "r") as f:
                     compoundData = json.load(f)
                     if compoundData["name"] == nodeClassName:
-                        compoundNode = getRawNodeInstance("compound", "uflowBase")
+                        compoundNode = getRawNodeInstance("compound", "FlowBasePackage")
                         compoundNodeFullPath = os.path.join(path, compoundNodeFileName)
                         with open(compoundNodeFullPath, "r") as f:
                             jsonString = f.read()

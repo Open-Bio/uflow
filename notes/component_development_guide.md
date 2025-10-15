@@ -2,7 +2,7 @@
 
 ## 概述
 
-基于对 `DemoPackage` 模板和 `uflowOpenCv` 示例的分析，本文档整理了 uflow 组件包开发的完整逻辑和最佳实践。
+基于对 `DemoPackage` 模板和 `OpenCVPackage` 示例的分析，本文档整理了 uflow 组件包开发的完整逻辑和最佳实践。
 
 ## 包结构组织
 
@@ -583,4 +583,4 @@ class YourPrefs(CategoryWidgetBase):
 
 uflow组件包开发是一个系统性的过程，需要理解其架构设计理念。通过遵循标准的结构组织和开发模式，可以创建出功能强大、易于维护的扩展包。关键是要理解节点-引脚-UI的分离设计，以及工厂模式在组件注册中的作用。
 
-参考 `DemoPackage` 模板和 `uflowOpenCv` 示例，开发者可以快速上手并创建自己的专业级uflow扩展包。
+参考 `DemoPackage` 模板和 `OpenCVPackage` 示例，开发者可以快速上手并创建自己的专业级uflow扩展包。

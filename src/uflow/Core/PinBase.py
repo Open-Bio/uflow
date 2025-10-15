@@ -884,7 +884,7 @@ class PinBase(IPin):
         return can
 
     def getDictElementNode(self, checked=None, node=None):
-        """Get the connected :py:class:`uflow.Packages.uflowBase.Nodes.makeDictElement.makeDictElement` to this
+        """Get the connected :py:class:`FlowBasePackage.Nodes.makeDictElement.makeDictElement` to this
         pin recursively
 
         :param checked: Currently visited pins, defaults to []
@@ -911,8 +911,8 @@ class PinBase(IPin):
         return node
 
     def getDictNode(self, checked=None, node=None):
-        """Get the connected :py:class:`uflow.Packages.uflowBase.Nodes.makeDict.makeDict` or
-        :py:class:`uflow.Packages.uflowBase.Nodes.makeAnyDict.makeAnyDict` to this pin recursively
+        """Get the connected :py:class:`FlowBasePackage.Nodes.makeDict.makeDict` or
+        :py:class:`FlowBasePackage.Nodes.makeAnyDict.makeAnyDict` to this pin recursively
 
         :param checked: Currently visited pins, defaults to []
         :type checked: list, optional

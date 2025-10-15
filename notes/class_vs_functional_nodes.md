@@ -80,7 +80,7 @@ class ViewerNode(NodeBase):
         if self.inp.dirty or self.arrayData.dirty:
             # 复杂的图像处理逻辑
             inputData = self.inp.getData()
-            viewer = self._wrapper.canvasRef().uflowInstance.invokeDockToolByName("uflowOpenCv","ImageViewerTool")
+            viewer = self._wrapper.canvasRef().uflowInstance.invokeDockToolByName("OpenCVPackage","ImageViewerTool")
             # ... 处理逻辑
         self.outExec.call()
 ```

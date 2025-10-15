@@ -50,11 +50,11 @@ from uflow.UI.ContextMenuGenerator import ContextMenuGenerator
 from uflow.UI.Widgets.PreferencesWindow import PreferencesWindow
 
 try:
-    from uflow.Packages.uflowBase.Tools.PropertiesTool import PropertiesTool
+    from FlowBasePackage.Tools.PropertiesTool import PropertiesTool
 except:
     pass
 from uflow.UI.Forms.PackageBuilder import PackageBuilder
-from uflow.Packages.uflowBase.Tools.LoggerTool import LoggerTool
+from FlowBasePackage.Tools.LoggerTool import LoggerTool
 
 from uflow import INITIALIZE
 from uflow.Input import InputAction, InputActionType

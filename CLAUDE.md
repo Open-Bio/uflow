@@ -99,9 +99,9 @@ PackageName/
 
 **Key packages:**
 
-- **uflowBase**: Core nodes (math, logic, control flow, variables)
+- **FlowBasePackage**: Core nodes (math, logic, control flow, variables)
 - **uflowDataAnalysis**: DataFrame processing, CSV I/O, data viewers
-- **uflowOpenCv**: Computer vision nodes wrapping OpenCV
+- **OpenCVPackage**: Computer vision nodes wrapping OpenCV
 
 ### Node Implementation Patterns
 

@@ -412,7 +412,7 @@ class NodeBase(INode):
                 self.completed.call(*args, **kwargs)
                 self._currentAmount = 0.0
 
-        .. note:: See :mod:`uflow.Packages.uflowBase.Nodes` source code module for more examples
+        .. note:: See :mod:`FlowBasePackage.Nodes` source code module for more examples
 
         """
         pass

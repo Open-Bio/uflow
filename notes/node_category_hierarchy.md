@@ -211,7 +211,7 @@ def insertNode(self, nodeCategoryPath, name, doc=None, libName=None, bPyNode=Fal
 #### uflowBase包分类结构
 
 ```
-uflowBase
+FlowBasePackage
 ├── Math
 │   ├── Basic (基础运算)
 │   ├── Float (浮点运算)
@@ -245,7 +245,7 @@ uflowBase
 #### uflowOpenCv包分类结构
 
 ```
-uflowOpenCv
+OpenCVPackage
 ├── Inputs
 │   ├── Image (图像输入)
 │   ├── Video (视频输入)
