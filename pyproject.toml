@@ -1,0 +1,67 @@
+[project]
+name = "uflow"
+version = "0.1.0"
+description = "A general purpose runtime extendable python qt node editor"
+authors = [
+    {name = "Ilgar Lunin"},
+    {name = "Pedro Cabrera", email = "pedro.c.vfx@gmail.com"}
+]
+readme = "README.md"
+license = {text = "Apache-2.0"}
+requires-python = ">=3.8"
+keywords = ["visual programming", "framework", "node editor", "qt"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+dependencies = [
+    "PySide6",
+    "qtpy",
+    "blinker",
+    "docutils",
+    "SQLAlchemy",
+    "requests",
+    "pandas>=2.0.3",
+    "sphinx>=7.1.2",
+    "sphinx-rtd-theme>=3.0.2",
+    "openai>=2.2.0",
+]
+
+[project.urls]
+Homepage = "https://pedrocabrera.github.io/uflow/"
+Repository = "https://github.com/pedrocabrera/uflow"
+Documentation = "https://uflow.readthedocs.io"
+"Bug Tracker" = "https://github.com/pedrocabrera/uflow/issues"
+
+[project.scripts]
+uflow = "uflow.Scripts:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/uflow"]
+
+[tool.uv]
+dev-dependencies = [
+    "pytest",
+    "pytest-qt",
+    "black",
+    "flake8",
+    "mypy",
+    "sphinx",
+    "sphinx_rtd_theme",
+    "qtpy>=2.4.0",
+]
+
+[[tool.uv.index]]
+url = "https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple"
+default = true
